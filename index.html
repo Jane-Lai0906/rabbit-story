@@ -1,1 +1,158 @@
 
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>Helping Others Brings Joy</title>
+
+<style>
+body {
+  font-family: Arial, "Noto Sans TC", sans-serif;
+  line-height: 1.8;
+  padding: 20px;
+  background: #fffaf2;
+}
+
+h1 {
+  text-align: center;
+}
+
+.story {
+  background: white;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 12px;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 5px;
+  cursor: pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>
+Helping Others Brings Joy<br>
+助人為快樂之本
+</h1>
+
+<div class="story">
+
+<p>
+<b>English:</b><br>
+Ruby is a little rabbit who lives in a beautiful forest.
+</p>
+
+<button onclick="speak('Ruby is a little rabbit who lives in a beautiful forest.','en-US')">
+🔊 Play English
+</button>
+
+<p>
+<b>中文：</b><br>
+Ruby 是一隻住在美麗森林裡的小兔子。
+</p>
+
+<button onclick="speak('Ruby 是一隻住在美麗森林裡的小兔子。','zh-TW')">
+🔊 播放中文
+</button>
+
+</div>
+
+
+<div class="story">
+
+<p>
+<b>English:</b><br>
+She loves to help her friends every day.
+</p>
+
+<button onclick="speak('She loves to help her friends every day.','en-US')">
+🔊 Play English
+</button>
+
+<p>
+<b>中文：</b><br>
+她每天喜歡幫助她的朋友。
+</p>
+
+<button onclick="speak('她每天喜歡幫助她的朋友。','zh-TW')">
+🔊 播放中文
+</button>
+
+</div>
+
+
+<div class="story">
+
+<p>
+<b>English:</b><br>
+One day, Ruby sees a little bird that needs help.
+</p>
+
+<button onclick="speak('One day, Ruby sees a little bird that needs help.','en-US')">
+🔊 Play English
+</button>
+
+<p>
+<b>中文：</b><br>
+有一天，Ruby 看見一隻需要幫助的小鳥。
+</p>
+
+<button onclick="speak('有一天，Ruby 看見一隻需要幫助的小鳥。','zh-TW')">
+🔊 播放中文
+</button>
+
+</div>
+
+
+<div class="story">
+
+<p>
+<b>English:</b><br>
+Ruby helps the bird and feels happy inside.
+</p>
+
+<button onclick="speak('Ruby helps the bird and feels happy inside.','en-US')">
+🔊 Play English
+</button>
+
+<p>
+<b>中文：</b><br>
+Ruby 幫助小鳥，心裡感到很快樂。
+</p>
+
+<button onclick="speak('Ruby 幫助小鳥，心裡感到很快樂。','zh-TW')">
+🔊 播放中文
+</button>
+
+</div>
+
+
+<h2>🌱 Helping others brings happiness.</h2>
+
+<p>
+幫助別人，也會帶給自己快樂。
+</p>
+
+
+<script>
+
+function speak(text, lang){
+
+let speech = new SpeechSynthesisUtterance(text);
+
+speech.lang = lang;
+
+speechSynthesis.speak(speech);
+
+}
+
+</script>
+
+
+</body>
+</html>
